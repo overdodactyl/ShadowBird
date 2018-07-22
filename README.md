@@ -7,6 +7,8 @@ This project is very early in development and users are encouraged to open issue
 
 ## Installation
 
+0. Enable the default dark theme (Tools > Add-ons > Theme > Dark)
+
 1. Download this repository and rename the folder to `chrome`.
 
 2. Place the `chrome` folder inside your Thunderbird profile directory. To find your profile directory, you can do the following from within Thunderbird:
