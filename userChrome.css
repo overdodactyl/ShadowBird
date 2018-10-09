@@ -106,7 +106,21 @@
   --dummy-variable-for-updater-scripys: black;
   --chrome-secondary-background-color: #38383B!important;
   --thread-background: #262524;
-  --selected-thread-background: #2059C9
+  --selected-thread-background: #2059C9;
+  --sidebar-background: #3D3C3B
+}
+#acctCentralGrid {
+  background-color: #1f2023!important;
+  color: #fff!important
+}
+.acctCentralRowTitleBox {
+  background-color: #2c2d2e!important;
+  border-color: #565758!important;
+  color: #fff!important
+}
+.acctCentralLinkText:focus,
+.acctCentralLinkText:hover {
+  color: #4a7dc2!important
 }
 /*! Column Header */
 #threadCols,
@@ -187,4 +201,27 @@ treechildren::-moz-tree-image(attachmentCol,attach) {
   border: none!important;
   background: #646567!important;
   box-shadow: none!important
+}
+/*! Sidebar Background */
+#folderTree {
+  -moz-appearance: none!important;
+  background-color: var(--sidebar-background)!important;
+  color: #fff!important
+}
+/*! Sidebar Splitter */
+#folderpane_splitter {
+  border-inline-start: 1px solid #000!important
+}
+/*!***** Tree *****/
+#folderTree > treechildren::-moz-tree-row(selected) {
+  border: none!important;
+  background: #565554!important;
+  -moz-appearance: none!important;
+  color: #000!important
+}
+#folderTree > treechildren::-moz-tree-row(primary) {
+  background: #565554!important
+}
+#folderTree > treechildren::-moz-tree-cell-text(selected) {
+  color: #fff!important
 }
