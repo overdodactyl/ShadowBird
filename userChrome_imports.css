@@ -1,6 +1,9 @@
-@import "css/color_variables.css";
-@import "css/context_menus.css";
-@import "css/sidebar.css";
-@import "css/message_thread.css";
-@import "css/account_central.css";
-@import "css/navbar.css";
+@import "css/common-files/color_variables.css";
+
+@import "css/userChrome-files/context_menus.css";
+@import "css/userChrome-files/sidebar.css";
+@import "css/userChrome-files/message_thread.css";
+@import "css/userChrome-files/homepage.css";
+@import "css/userChrome-files/navbar.css";
+@import "css/userChrome-files/search_page.css";
+

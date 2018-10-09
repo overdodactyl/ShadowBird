@@ -7,7 +7,7 @@ var exec = require('gulp-exec');
 
 /* Minify all base code, edit in place */
 gulp.task('minify_base_code', function() {
-  return gulp.src(['css/*.css'])
+  return gulp.src(['css/common-files/*.css', 'css/userContent-files/*.css', 'css/userChrome-files/*'])
     .pipe(cleanCSS({
       level : 2 ,
       format: 'beautify'
@@ -18,16 +18,24 @@ gulp.task('minify_base_code', function() {
 });
 
 
+/* Add everything to userContent */
+gulp.task('userContent', function() {
+  return gulp.src(['css/common-files/*.css', 'css/userContent-files/*.css'])
+    .pipe(concatCss('userContent.css'))
+    .pipe(gulp.dest('.'));
+});
+
+
 /* Add everything to userChrome */
 gulp.task('userChrome', function() {
-  return gulp.src(['css/*.css'])
+  return gulp.src(['css/common-files/*.css', 'css/userChrome-files/*.css'])
     .pipe(concatCss('userChrome.css'))
     .pipe(gulp.dest('.'));
 });
 
 /* Minify final user files */
 gulp.task('minify_final', function() {
-  return gulp.src(['userChrome.css'])
+  return gulp.src(['userChrome.css', 'userContent.css'])
     .pipe(cleanCSS({
       level : 2 ,
       format: 'beautify'
@@ -38,18 +46,9 @@ gulp.task('minify_final', function() {
 });
 
 
-/* All */
-gulp.task('all', gulp.parallel('userChrome', function() {
-  return gulp.src(['userChrome.css'])
-    .pipe(cleanCSS({
-      level : 1 ,
-      format: 'beautify'
-    }))
-    .pipe(gulp.dest('.'));
-}));
 
 /* Publish */
-gulp.task('publish', gulp.series('minify_base_code', 'userChrome', 'minify_final'));
+gulp.task('publish', gulp.series('minify_base_code', 'userChrome', 'userContent', 'minify_final'));
 
 
 

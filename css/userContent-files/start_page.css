@@ -1,0 +1,11 @@
+@-moz-document url-prefix(about:blank) {
+  html {
+    background: #1f2022!important
+  }
+}
+@-moz-document url-prefix("https://start.thunderbird.net") {
+  body {
+    background: #1f2022!important;
+    color: #fff
+  }
+}
