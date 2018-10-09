@@ -35,19 +35,6 @@ url-prefix(https://discovery.addons.mozilla.org) {
     background: rgba(0,0,0,0)!important;
     border: 0!important
   }
-  @media screen and (-moz-windows-theme) {
-    menuitem,
-    menupopup menu {
-      margin: 1px 6px!important
-    }
-    menupopup,
-    menupopup > menu > menupopup,
-    popup,
-    popup > menu > menupopup {
-      border: 1px solid!important;
-      border-color: var(--in-content-box-background)!important
-    }
-  }
   #action-box,
   #badCertAdvancedPanel,
   #content div.log span.section-heading button.no-print:hover,
@@ -63,6 +50,19 @@ url-prefix(https://discovery.addons.mozilla.org) {
   .aboutPageWideContainer div#debug table#debug-table tbody tr td,
   .aboutPageWideContainer label input#submit:hover {
     background-color: var(--in-content-box-background)!important
+  }
+  @media screen and (-moz-windows-theme) {
+    menuitem,
+    menupopup menu {
+      margin: 1px 6px!important
+    }
+    menupopup,
+    menupopup > menu > menupopup,
+    popup,
+    popup > menu > menupopup {
+      border: 1px solid!important;
+      border-color: var(--in-content-box-background)!important
+    }
   }
 }
 @-moz-document url-prefix(about:memory) {

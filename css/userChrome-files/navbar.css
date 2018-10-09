@@ -6,3 +6,8 @@
   background: #646567!important;
   box-shadow: none!important
 }
+.toolbarbutton-1 > .toolbarbutton-menubutton-button,
+.toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-1:not([type=menu-button]) {
+  transition-duration: 0s!important
+}

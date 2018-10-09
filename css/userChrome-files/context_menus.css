@@ -4,9 +4,16 @@ menupopup scrollbox,
 popup,
 popup > menu > menupopup {
   -moz-appearance: none!important;
-  background: var(--in-content-box-background)!important;
+  background: #373737!important;
   border: none!important;
-  padding: 0!important
+  padding: 0!important;
+  border-radius: 2px!important
+}
+menupopup,
+menupopup > menu > menupopup,
+popup,
+popup > menu > menupopup {
+  border: 1px solid #4d5157!important
 }
 menu.subviewbutton > .menu-right {
   fill: #000!important
@@ -16,48 +23,45 @@ menu.subviewbutton > .menu-right {
 }
 #context-navigation menuitem,
 .panel-arrowcontent {
-  color: var(--in-content-selected-text)!important;
-  background: var(--in-content-box-background)!important
+  color: #fff!important;
+  background: #373737!important
 }
-#context-navigation menuitem:hover {
-  background: var(--in-content-primary-button-background-hover)!important
+#context-navigation menuitem:hover,
+.splitmenu-menuitem:hover {
+  background: #2059c9!important
 }
+.splitmenu-menuitem,
 menuitem,
 menupopup menu {
   -moz-appearance: none!important;
-  color: var(--in-content-selected-text)!important;
-  background: var(--in-content-box-background)!important
+  color: #fff!important;
+  background: #373737!important
 }
 menupopup menuseparator {
   -moz-appearance: none!important;
   padding: 1px!important;
   margin: 5px 0!important;
-  background: var(--in-content-table-border-dark-color)!important;
+  background: #5a5a5a!important;
   border-top: none!important
 }
 #context-navigation menuitem[disabled=true],
 menu[disabled=true],
 menuitem[disabled=true] {
-  color: var(--in-content-box-border-color)!important
+  color: #acaeb2!important
 }
 menu[disabled=true]:hover,
 menuitem:hover[disabled=true] {
-  color: var(--in-content-box-border-color)!important;
-  background-color: var(--in-content-box-background)!important
+  color: #acaeb2!important;
+  background-color: #373737!important
 }
 #context-navigation menuitem:hover[disabled=true] {
   color: var(--in-content-box-border-color)!important;
-  background-color: var(--in-content-box-background)!important
+  background-color: #373737!important
 }
 menuitem[_moz-menuactive=true],
 menupopup menu[_moz-menuactive=true] {
-  color: var(--in-content-selected-text)!important;
-  background-color: var(--in-content-primary-button-background-hover)!important
-}
-vbox#sidebar-box.chromeclass-extrachrome {
-  border-color: var(--in-content-category-header-background)!important;
-  border-right: 1px!important;
-  border-style: solid!important
+  color: #fff!important;
+  background-color: #2059c9!important
 }
 #_testpilot-containers_7 .menu-iconic-left,
 #treestyletab_piro_sakura_ne_jp_8 .menu-iconic-left {
@@ -97,9 +101,7 @@ screen and (-moz-os-version:windows-win10) {
   menupopup#tabContextMenu menupopup,
   menupopup#toolbar-context-menu,
   toolbaritem#menubar-items menupopup {
-    border-color: var(--in-content-box-background)!important;
-    border-width: 1px!important;
-    border-style: solid!important
+    border: 1px solid #373737!important
   }
   #bookmarksMenuPopup,
   #personal-bookmarks menupopup .bookmark-item,
