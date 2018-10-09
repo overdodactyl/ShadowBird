@@ -20,7 +20,7 @@ gulp.task('minify_base_code', function() {
 
 /* Add everything to userChrome */
 gulp.task('userChrome', function() {
-  return gulp.src(['css/color_variables.css', 'css/[^color]*.css'])
+  return gulp.src(['css/*.css'])
     .pipe(concatCss('userChrome.css'))
     .pipe(gulp.dest('.'));
 });
