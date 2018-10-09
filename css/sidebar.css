@@ -1,0 +1,26 @@
+:root {
+  --sidebar-background: #3D3C3B
+}
+/*! Sidebar Background */
+#folderTree {
+  -moz-appearance: none!important;
+  background-color: var(--sidebar-background)!important;
+  color: #fff!important
+}
+/*! Sidebar Splitter */
+#folderpane_splitter {
+  border-inline-start: 1px solid #000!important
+}
+/*!***** Tree *****/
+#folderTree > treechildren::-moz-tree-row(selected) {
+  border: none!important;
+  background: #565554!important;
+  -moz-appearance: none!important;
+  color: #000!important
+}
+#folderTree > treechildren::-moz-tree-row(primary) {
+  background: #565554!important
+}
+#folderTree > treechildren::-moz-tree-cell-text(selected) {
+  color: #fff!important
+}

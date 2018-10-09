@@ -1,0 +1,8 @@
+.findbar-button:not(:-moz-any([checked=true],[disabled=true])):hover,
+.toolbarbutton-1:not([disabled=true]):-moz-any(:hover,[open=true]) > .toolbarbutton-menubutton-button,
+.toolbarbutton-1:not([disabled=true]):hover > .toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-1:not([type=menu-button]):not([disabled=true]):not([checked=true]):not([open=true]):not(:active):hover {
+  border: none!important;
+  background: #646567!important;
+  box-shadow: none!important
+}

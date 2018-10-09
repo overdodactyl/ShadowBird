@@ -1,0 +1,13 @@
+#acctCentralGrid {
+  background-color: #1f2023!important;
+  color: #fff!important
+}
+.acctCentralRowTitleBox {
+  background-color: #2c2d2e!important;
+  border-color: #565758!important;
+  color: #fff!important
+}
+.acctCentralLinkText:focus,
+.acctCentralLinkText:hover {
+  color: #4a7dc2!important
+}

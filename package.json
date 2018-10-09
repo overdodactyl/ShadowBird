@@ -1,0 +1,31 @@
+{
+  "name": "shadowbird",
+  "version": "1.0.0",
+  "description": "a universal dark theme for thunderbird 57+",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-exec": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0"
+  },
+  "scripts": {
+    "test": "gulp publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overdodactyl/ShadowBird.git"
+  },
+  "keywords": [
+    "dark",
+    "theme"
+  ],
+  "author": "@overdodactyl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/overdodactyl/ShadowBird/issues"
+  },
+  "homepage": "https://github.com/overdodactyl/ShadowBird#readme"
+}
