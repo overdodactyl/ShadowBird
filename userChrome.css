@@ -12,7 +12,8 @@
 ================= */
 :root {
   --thread-background: #1F2022;
-  --selected-thread-background: #2059C9 --chrome-secondary-background-color: #38383B!important;
+  --selected-thread-background: #2059C9;
+  --chrome-secondary-background-color: #38383B!important;
   --sidebar-background: #2C2D2F
 }
 menupopup,
