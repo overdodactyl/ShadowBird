@@ -55,7 +55,7 @@ menuitem:hover[disabled=true] {
   background-color: #373737!important
 }
 #context-navigation menuitem:hover[disabled=true] {
-  color: var(--in-content-box-border-color)!important;
+  color: #737373!important;
   background-color: #373737!important
 }
 menuitem[_moz-menuactive=true],
@@ -75,7 +75,7 @@ screen and (-moz-os-version:windows-win8),
 screen and (-moz-os-version:windows-win10) {
   menupopup menuseparator {
     padding: 0!important;
-    border-color: var(--in-content-table-border-dark-color)!important
+    border-color: #38383d!important
   }
   #context-navigation,
   #context-sep-navigation {

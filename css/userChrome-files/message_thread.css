@@ -1,7 +1,3 @@
-:root {
-  --thread-background: #1F2022;
-  --selected-thread-background: #2059C9
-}
 /*! Column Header */
 #threadCols,
 #threadCols treecol,

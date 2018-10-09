@@ -1,7 +1,7 @@
 @-moz-document url(chrome://messenger/content/glodaFacetView.xhtml) {
   /*! Sidebar */
 .facets-sidebar {
-    background-color: #2c2d2f!important;
+    background-color: var(--sidebar-background)!important;
     color: #fff!important
   }
   .bar,
@@ -52,7 +52,7 @@
   .message-body,
   .message-date,
   .message-recipients {
-    color: var(--in-content-page-color)!important
+    color: #fff!important
   }
   .message-body-fulltext-match {
     background-color: #32497a!important;

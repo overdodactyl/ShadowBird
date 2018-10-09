@@ -1,0 +1,17 @@
+/*! Border before message area */
+#msgHeaderView {
+  border-bottom: 1px solid #000!important
+}
+/*! Notifications */
+notification {
+  background: #3c4151!important;
+  color: #e1e2e4!important;
+  border-color: #000!important
+}
+notification > button {
+  background: #6d717d!important;
+  color: #e8e8ea!important;
+  text-shadow: none!important;
+  box-shadow: none!important;
+  border-radius: 3px!important
+}

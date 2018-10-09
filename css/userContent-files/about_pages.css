@@ -7,26 +7,26 @@
 url(https://www.mozilla.org/credits/),
 url-prefix(https://discovery.addons.mozilla.org) {
   :root {
-    --aboutProfiles-table-background: var(--in-content-box-background)!important
+    --aboutProfiles-table-background: #4a4a4f!important
   }
   menupopup,
   menupopup > menu > menupopup,
   popup,
   popup > menu > menupopup {
     -moz-appearance: none!important;
-    background: var(--in-content-box-background)!important;
+    background: #4a4a4f!important;
     border: none!important;
     padding: 0!important
   }
   menuitem,
   menupopup menu {
     -moz-appearance: none!important;
-    color: var(--in-content-selected-text)!important
+    color: #fff!important
   }
   menuitem:hover,
   menupopup menu:hover {
-    color: var(--in-content-text-color)!important;
-    background-color: var(--in-content-primary-button-background-hover)!important
+    color: #fff!important;
+    background-color: #0060df!important
   }
   menupopup menuseparator {
     padding: 0!important;
@@ -49,7 +49,7 @@ url-prefix(https://discovery.addons.mozilla.org) {
   #subprocess-reports tr td,
   .aboutPageWideContainer div#debug table#debug-table tbody tr td,
   .aboutPageWideContainer label input#submit:hover {
-    background-color: var(--in-content-box-background)!important
+    background-color: #4a4a4f!important
   }
   @media screen and (-moz-windows-theme) {
     menuitem,
@@ -60,8 +60,7 @@ url-prefix(https://discovery.addons.mozilla.org) {
     menupopup > menu > menupopup,
     popup,
     popup > menu > menupopup {
-      border: 1px solid!important;
-      border-color: var(--in-content-box-background)!important
+      border: 1px solid #4a4a4f!important
     }
   }
 }
@@ -70,6 +69,6 @@ url-prefix(https://discovery.addons.mozilla.org) {
   .opsRowLabel,
   .section,
   .treeline {
-    color: var(--in-content-page-color)!important
+    color: #fff!important
   }
 }
