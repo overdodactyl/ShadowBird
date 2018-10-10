@@ -14,20 +14,30 @@
   --thread-background: #1F2022;
   --selected-thread-background: #2059C9;
   --chrome-secondary-background-color: #38383B!important;
-  --sidebar-background: #2C2D2F
+  --sidebar-background: #2C2D2F;
+  --aboutProfiles-table-background: #4a4a4f!important;
+  --in-content-text-color: #E2E2E2!important;
+  --in-content-page-color: #FFF!important;
+  --in-content-page-background: #1f2023!important;
+  --in-content-box-background: #403F3E!important;
+  --in-content-box-background-hover: #3C4151!important;
+  --in-content-border-focus: #426E96!important;
+  --in-content-box-border-color: #5B5B5A!important;
+  --aboutSupport-table-background: #353434!important;
+  --in-content-border-color: #5B5B5A!important;
+  --in-content-table-border-dark-color: #5B5B5A!important;
+  --in-content-table-header-background: #204E8A!important;
+  --in-content-link-color: #4a7dc2!important;
+  --in-content-link-color-hover: #4670A9!important
 }
 @-moz-document url-prefix(about:blank) {
   html {
     background: #1f2022!important
   }
 }
-@-moz-document regexp("^about:(?!reader).*"),
-url(https://www.mozilla.org/credits/),
-url-prefix(https://discovery.addons.mozilla.org) {
-  :root {
-    --aboutProfiles-table-background: #4a4a4f!important
-  }
-  menupopup,
+@-moz-document url-prefix(about:) {
+  /*! Context Menus/Drop Downs */
+menupopup,
   menupopup > menu > menupopup,
   popup,
   popup > menu > menupopup {
@@ -53,22 +63,6 @@ url-prefix(https://discovery.addons.mozilla.org) {
     background: rgba(0,0,0,0)!important;
     border: 0!important
   }
-  #action-box,
-  #badCertAdvancedPanel,
-  #content div.log span.section-heading button.no-print:hover,
-  #content div.stats span.section-heading button.no-print:hover,
-  #contents table tbody tr td,
-  #contents table tr.no-copy td,
-  #controls.no-print div.controls div.control button:hover,
-  #errorPageContainer button#errorTryAgain:hover,
-  #header-utils-btn[open=true],
-  #profiles table,
-  #provider table#provider-table tbody#provider-table-body tr td,
-  #subprocess-reports tr td,
-  .aboutPageWideContainer div#debug table#debug-table tbody tr td,
-  .aboutPageWideContainer label input#submit:hover {
-    background-color: #4a4a4f!important
-  }
   @media screen and (-moz-windows-theme) {
     menuitem,
     menupopup menu {
@@ -80,6 +74,96 @@ url-prefix(https://discovery.addons.mozilla.org) {
     popup > menu > menupopup {
       border: 1px solid #4a4a4f!important
     }
+  }
+  /*! Checkboxes and radio buttons */
+.checkbox-check,
+  .prefs-pane [type=checkbox]:checked + label::before,
+  .prefs-pane [type=checkbox]:not(:checked) + label::before,
+  .radio-check,
+  input[type=checkbox] {
+    -moz-appearance: none!important;
+    border: 1px solid!important;
+    background-color: var(--in-content-box-background)!important;
+    background-image: none!important;
+    box-shadow: none!important;
+    border-color: var(--in-content-box-border-color)!important
+  }
+  radio[disabled=true] {
+    color: var(--in-content-box-border-color)!important
+  }
+  .radio-check[selected] {
+    list-style-image: url(chrome://global/skin/in-content/radio.svg);
+    fill: var(--in-content-border-highlight)!important;
+    -moz-context-properties: fill,stroke;
+    stroke: none;
+    border-radius: 50%!important
+  }
+  .checkbox-check[checked],
+  input[type=checkbox]:checked {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMjFweCIgaGVpZ2h0PSIyMXB4IiB2aWV3Qm94PSIwIDAgMjEgMjEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIxIDIxIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiMyMDRFOEEiIGQ9Ik05LjM5LDE2LjVMMTYuMjc5LDZsLTEuNTEtMS41TDkuMzcsMTIuN0w2LjI4LDkuMkw0LjcsMTAuN0w5LjM5LDE2LjV6Ii8+DQo8L3N2Zz4NCg==)!important;
+    fill: var(--in-content-border-highlight)!important;
+    -moz-context-properties: fill,stroke!important;
+    stroke: none
+  }
+  html body div.ancillary div div.opsRow div.opsRowLabel label input,
+  html body div.ancillary div div.opsRow div.opsRowLabel label input#verbose {
+    -moz-appearance: checkbox!important;
+    min-height: 10px!important;
+    min-width: 10px!important;
+    margin-top: -5px;
+    margin-bottom: -1px
+  }
+  button {
+    background: #6d717d!important;
+    color: #e8e8ea!important;
+    text-shadow: none!important;
+    box-shadow: none!important;
+    border-radius: 3px!important;
+    border: none!important
+  }
+}
+@-moz-document url-prefix(about:addons) {
+  #header-utils-btn:not([disabled=true]):hover,
+  .header-button:not([disabled=true]):hover {
+    background-color: var(--in-content-box-background-hover)!important
+  }
+  #header-utils-btn,
+  #header-utils-btn[open=true] {
+    fill: var(--in-content-text-color)!important
+  }
+  #header-utils-btn > .toolbarbutton-menu-dropmarker {
+    filter: invert(100%)
+  }
+  #categories,
+  #nav-header {
+    background-color: var(--sidebar-background)!important;
+    color: var(--in-content-page-color)!important
+  }
+  .list > scrollbox > .scrollbox-innerbox {
+    border: none!important
+  }
+  .category:not([selected]) {
+    color: var(--in-content-text-color)!important
+  }
+  .nav-button {
+    fill: var(--in-content-text-color)!important
+  }
+  .list {
+    color: var(--in-content-text-color)!important
+  }
+  .addon-view {
+    background-image: none!important;
+    border-bottom: none!important
+  }
+  .addon-view[active=false] {
+    opacity: .4!important
+  }
+}
+@-moz-document url-prefix(about:support) {
+  /*! table sub categories */
+.thead-level2 > th {
+    background-color: #292827!important;
+    color: var(--in-content-text-color)!important
   }
 }
 @-moz-document url-prefix(about:memory) {

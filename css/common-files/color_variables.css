@@ -14,5 +14,19 @@
   --thread-background: #1F2022;
   --selected-thread-background: #2059C9;
   --chrome-secondary-background-color: #38383B!important;
-  --sidebar-background: #2C2D2F
+  --sidebar-background: #2C2D2F;
+  --aboutProfiles-table-background: #4a4a4f!important;
+  --in-content-text-color: #E2E2E2!important;
+  --in-content-page-color: #FFF!important;
+  --in-content-page-background: #1f2023!important;
+  --in-content-box-background: #403F3E!important;
+  --in-content-box-background-hover: #3C4151!important;
+  --in-content-border-focus: #426E96!important;
+  --in-content-box-border-color: #5B5B5A!important;
+  --aboutSupport-table-background: #353434!important;
+  --in-content-border-color: #5B5B5A!important;
+  --in-content-table-border-dark-color: #5B5B5A!important;
+  --in-content-table-header-background: #204E8A!important;
+  --in-content-link-color: #4a7dc2!important;
+  --in-content-link-color-hover: #4670A9!important
 }
