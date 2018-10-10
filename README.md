@@ -26,4 +26,6 @@ user_pref("browser.display.foreground_color", "#b1b1b3");
 user_pref("browser.display.background_color", "#38383d");
 ```
 
+The `user.js` does not exist be default; you will have to create the file (name and case sensitive) if you haven't done so in the past. 
+
 4. Restart Thunderbird
