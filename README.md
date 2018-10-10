@@ -26,4 +26,4 @@ user_pref("browser.display.foreground_color", "#b1b1b3");
 user_pref("browser.display.background_color", "#38383d");
 ```
 
-4. Restart Firefox
+4. Restart Thunderbird
