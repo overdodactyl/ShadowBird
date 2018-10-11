@@ -262,6 +262,23 @@ tab[calview][selected=true] {
   .fileFieldContentBox {
     background: var(--in-content-box-background)!important
   }
+  #activityView {
+    background: #1f2022!important;
+    color: #fff!important
+  }
+  #search {
+    -moz-appearance: none!important;
+    background: #000!important
+  }
+  #clearListButton {
+    background: #6d717d!important;
+    color: #e8e8ea!important;
+    box-shadow: none!important;
+    border-radius: 3px!important;
+    border: none!important;
+    text-shadow: none!important;
+    box-shadow: none!important
+  }
 }
 menupopup,
 menupopup > menu > menupopup,
