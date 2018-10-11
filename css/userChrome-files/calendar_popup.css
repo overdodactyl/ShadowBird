@@ -1,0 +1,16 @@
+@-moz-document url-prefix(chrome://calendar/content/) {
+  #event-toolbar {
+    background: #38383b!important;
+    color: #fff!important
+  }
+  statusbar {
+    -moz-appearance: none!important;
+    background-color: #000!important;
+    color: #fff!important;
+    text-shadow: none!important
+  }
+  #lightning-item-panel-iframe {
+    margin-top: -1px!important;
+    border-top: 1px solid #000!important
+  }
+}
