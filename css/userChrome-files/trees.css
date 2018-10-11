@@ -1,19 +1,28 @@
 /*! Column Header */
 #threadCols,
-#threadCols treecol,
-#threadCols treecolpicker {
+#unifinder-search-results-tree-cols,
+treecol,
+treecolpicker {
   -moz-appearance: none!important;
   background: #333231!important
 }
-#threadCols treecol[sortDirection=ascending] .treecol-sortdirection {
+treecol,
+treecolpicker {
+  color: #fff!important;
+  border-left: 1px solid rgba(127,127,127,.4)!important
+}
+treecol[sortDirection=ascending] .treecol-sortdirection {
   -moz-appearance: button-arrow-up!important
 }
-#threadCols treecol[sortDirection=descending] .treecol-sortdirection {
+treecol[sortDirection=descending] .treecol-sortdirection {
   -moz-appearance: button-arrow-down!important
+}
+#unifinder-search-results-tree-cols treecolpicker {
+  color: #fff!important;
+  border-left: 1px solid rgba(127,127,127,.4)!important
 }
 #threadCols treecol,
 #threadCols treecolpicker {
-  color: #fff!important;
   border: none!important;
   padding: 0 3px!important;
   margin-top: 3px!important;
@@ -31,18 +40,18 @@
 #threadTree {
   background: var(--thread-background)!important
 }
-#threadTree > treechildren::-moz-tree-row {
+treechildren::-moz-tree-row {
   background: var(--thread-background)!important;
   border: none!important
 }
-#threadTree > treechildren::-moz-tree-cell-text {
+treechildren::-moz-tree-cell-text {
   color: #d8d8d8!important
 }
-#threadTree > treechildren::-moz-tree-row(selected) {
+treechildren::-moz-tree-row(selected) {
   border: none!important;
   background: var(--selected-thread-background)!important
 }
-#threadTree > treechildren::-moz-tree-cell-text(selected) {
+treechildren::-moz-tree-cell-text(selected) {
   color: #fff!important
 }
 #threadpane-splitter[orient=vertical] {
@@ -50,8 +59,8 @@
   border-color: #0c0c0c!important
 }
 /*! Sort order arrows */
-#threadCols treecol[sortDirection=ascending] .treecol-sortdirection,
-#threadCols treecol[sortDirection=descending] .treecol-sortdirection {
+[sortDirection=ascending] .treecol-sortdirection,
+[sortDirection=descending] .treecol-sortdirection {
   filter: invert(80%)
 }
 /*! Unread and flagged column - unflagged, read */
