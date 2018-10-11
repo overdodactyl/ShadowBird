@@ -28,7 +28,7 @@ gulp.task('userContent', function() {
 
 /* Add everything to userChrome */
 gulp.task('userChrome', function() {
-  return gulp.src(['css/common-files/*.css', 'css/userChrome-files/*.css'])
+  return gulp.src(['css/common-files/*.css', 'css/userChrome-files/!(patch_windows)*.css', 'css/userChrome-files/*.css'])
     .pipe(concatCss('userChrome.css'))
     .pipe(gulp.dest('.'));
 });
