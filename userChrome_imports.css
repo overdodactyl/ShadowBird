@@ -8,4 +8,31 @@
 @import "css/userChrome-files/search_page.css";
 @import "css/userChrome-files/message_area.css";
 @import "css/userChrome-files/patch_windows.css";
+@import "css/userChrome-files/calendar.css";
+
+minimonth {
+  --mmMainBackground: #2C2D2F !important;
+  --mmHighlightColor: HighlightText;
+  --mmHighlightBackground: #204E8A !important;
+  --mmHighlightBorderColor: Highlight;
+  --mmBoxBackground: #1C1B19 !important;
+  --mmBoxBorderColor: #404040 !important;
+  --mmDayColor: #FFF !important;
+  --mmDayBorderColor: #404040 !important;
+  --mmDayOtherColor: #E2E2E2 !important;
+  --mmDayOtherBackground: #272625 !important;
+  --mmDayOtherBorderColor: #272625 !important;
+  --mmDayTodayBackground: #4C71A1 !important;
+  --mmDayTodayBorderColor: #204E8A !important;
+  --mmDaySelectedColor: #7C7561 !important;
+  --mmDaySelectedBackground: #FBDF87 !important;
+  --mmDaySelectedBorderColor: #EFCC5B !important;
+  --mmDaySelectedTodayBackground: #EFCC5B !important;
+  --mmDaySelectedTodayBorderColor: #FBDF87 !important;
+}
+
+.minimonth-nav-btns .toolbarbutton-icon {
+  filter: invert(65%)
+}
+
 

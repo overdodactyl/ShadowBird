@@ -1,0 +1,271 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+window {
+    --viewColor: #FFF !important;
+    --viewBackground: #1C1B19 !important;
+    --viewBorderColor: #404040 !important;
+    --viewDoubleBorderColor: var(--viewBackground) var(--viewBorderColor) !important;
+    --viewHighlightBorderColor: #204E8A !important;
+    --viewTodayBorderColor: #204E8A !important;
+    --viewTodayBackground: #4c71a1!important;
+    --viewTodayLabelColor: #FFFFFF!important;
+    --viewTodayLabelBackground: #204E8A!important;
+    --viewTodayLabelSelectedColor: #FFF!important;
+    --viewTodayLabelSelectedBackground: #EFCC5B!important;
+    --viewTodayOffBackground: #d7e8f8!important;
+    --viewTodayDayLabelBackground: #204E8A!important;
+    --viewTodayWeekendBackground: #e1f0fd!important;
+    --viewWeekendBackground: #222222!important;
+    --viewHeaderSelectedBackground: #FBDF87!important;
+    --viewDayBoxSelectedBackground: #FBDF87!important;
+    --viewDayBoxOffSelectedBackground: #f2edb2!important;
+    --viewDayBoxOtherSelectedBackground: #fffcd8!important;
+    --viewMonthCurrentBackground: #323232!important;
+    --viewMonthOtherBackground: #282625!important;
+    --viewMonthDayBoxSelectedColor: #616163!important;
+    --viewMonthDayBoxSelectedBackground: #EFCC5B!important;
+    --viewMonthDayBoxLabelColor: #FFF!important;
+    --viewMonthDayBoxLabelTexture: none!important;
+    --viewMonthDayBoxWeekLabel: #E2E2E2!important;
+    --viewMonthDayOtherBackground: #272625!important;
+    --viewMonthDayOtherLabelBackground: #323232!important;
+    --viewMonthDayOffLabelBackground: #323232!important;
+    --viewOffTimeBackground: #262524!important;
+    --viewTimeBoxColor: #6a6969!important;
+    --viewDayLabelSelectedColor: #000!important;
+    --viewDayLabelSelectedBackground: #fffabc!important;
+    --viewDragboxColor: -moz-dialogtext!important;
+    --viewDragboxBackground: linear-gradient(#fe4b22, #feb822)!important;
+    --viewDropshadowBackground: #ffa47d!important;
+}
+
+minimonth {
+  --mmMainBackground: #2C2D2F !important;
+  --mmHighlightColor: HighlightText;
+  --mmHighlightBackground: #204E8A !important;
+  --mmHighlightBorderColor: Highlight;
+  --mmBoxBackground: #1C1B19 !important;
+  --mmBoxBorderColor: #404040 !important;
+  --mmDayColor: #FFF !important;
+  --mmDayBorderColor: #404040 !important;
+  --mmDayOtherColor: #E2E2E2 !important;
+  --mmDayOtherBackground: #272625 !important;
+  --mmDayOtherBorderColor: #272625 !important;
+  --mmDayTodayBackground: #4C71A1 !important;
+  --mmDayTodayBorderColor: #204E8A !important;
+  --mmDaySelectedColor: #7C7561 !important;
+  --mmDaySelectedBackground: #FBDF87 !important;
+  --mmDaySelectedBorderColor: #EFCC5B !important;
+  --mmDaySelectedTodayBackground: #EFCC5B !important;
+  --mmDaySelectedTodayBorderColor: #FBDF87 !important;
+}
+
+.minimonth-nav-btns .toolbarbutton-icon {
+  filter: invert(65%)
+}
+
+.tree-rows {
+    background-color: #1F2022 !important;
+}
+
+treechildren::-moz-tree-row {
+  background: var(--thread-background)!important;
+  border: none!important
+}
+
+treechildren::-moz-tree-cell-text {
+  color: #d8d8d8!important
+}
+
+treechildren::-moz-tree-row(selected) {
+  border: none!important;
+  background: var(--selected-thread-background)!important
+}
+
+#unifinder-search-results-tree-cols,
+#unifinder-search-results-tree-cols treecol,
+#unifinder-search-results-tree-cols treecolpicker{
+  -moz-appearance: none!important;
+  background: #333231!important
+}
+
+#unifinder-search-results-tree-cols treecol,
+#unifinder-search-results-tree-cols treecolpicker {
+  color: #fff!important;
+  border-left: 1px solid rgba(127,127,127,.4)!important;
+}
+
+treecol[sortDirection=ascending] .treecol-sortdirection {
+  -moz-appearance: button-arrow-up!important
+}
+treecol[sortDirection=descending] .treecol-sortdirection {
+  -moz-appearance: button-arrow-down!important
+}
+
+treecol[sortDirection=ascending] .treecol-sortdirection,
+treecol[sortDirection=descending] .treecol-sortdirection {
+  filter: invert(80%)
+}
+
+.calendar-sidebar-splitter {
+    background: #000 !important;
+}
+
+.calendar-splitter[orient="vertical"] {
+    background: #202020!important;
+  border-color: #0c0c0c!important
+}
+
+#view-deck {
+    background-color:  #1C1B19 !important;
+}
+
+#calendar-nav-control {
+    background: #3F3F3E !important;
+}
+
+.view-header {
+    color: var(--in-content-page-color) !important;
+}
+
+#calendar-nav-control {
+    --calview-tabline-color: #204E8A !important;
+    --calview-border-color: #313131 !important;
+    --calview-border-bottom-color: #313131 !important;;
+}
+
+.navigation-bottombox {
+    background-color: #595958 !important;
+}
+
+tab[calview] {
+    color: var(--in-content-link-color) !important;;
+    padding-top: 4px;
+}
+
+tab[calview][selected="true"] {
+    background-color: #595958 !important;
+    color: #FFF !important;
+}
+
+#view-deck {
+    border-width: 0 0 0 0 !important;
+}
+
+.view-navigation-button,
+.today-navigation-button {
+    -moz-appearance: none !important;
+    background-color: #6D6C6B !important;
+    border-radius: 6px;
+    fill: var(--in-content-page-color) !important;
+    margin: 3px 3px !important;
+    color: var(--in-content-page-color) !important;
+}
+
+#today-splitter {
+  border-color: #000 !important;
+}
+
+#unifinder-searchBox,
+#task-addition-box {
+  background: #38383B !important;
+  color: var(--in-content-page-color) !important;
+  border-color: #000 !important;
+}
+
+.searchBox {
+  background: var(--in-content-box-background) !important;
+  color: var(--in-content-page-color) !important;
+}
+
+
+#agenda-panel:-moz-lwtheme > vbox, 
+#today-pane-splitter:-moz-lwtheme, 
+#todo-tab-panel:-moz-lwtheme{
+   background-color: var(--in-content-box-background) !important;
+   color: var(--in-content-page-color) !important;
+}
+
+#unifinder-task-edit-field,
+#view-task-edit-field {
+  background: var(--in-content-box-background) !important;
+  color: var(--in-content-page-color) !important;
+  -moz-appearance: none !important;
+}
+
+treecol,
+treecolpicker{
+  -moz-appearance: none!important;
+  background: #333231!important
+}
+
+treecol,
+treecolpicker {
+  color: #fff!important;
+  border-left: 1px solid rgba(127,127,127,.4)!important;
+}
+
+#calendar-task-tree-detail {
+    border-color: #000 !important;
+}
+
+
+.toolbarbutton-1.msgHeaderView-button {
+    border: 1px solid var(--toolbarbutton-header-bordercolor);
+    background: var(--toolbarbutton-hover-background);
+    color: #FFF !important;
+}
+
+.task-details-value {
+    color: #FFF !important;
+}
+
+#calendar-task-details-container {
+  background: #38383B !important;
+}
+
+.main-header-area {
+  border-color: #000 !important;
+}
+
+
+#calendar-task-details-description {
+  -moz-appearance: none !important;
+  background: var(--in-content-box-background) !important;
+  color: var(--in-content-page-color) !important;
+  border-color: var(--in-content-box-border-color) !important;
+}
+
+#today-pane-panel:-moz-lwtheme > vbox,
+#mini-day-image {
+  background: #38383B !important;
+  color: var(--in-content-page-color) !important;
+}
+
+#agenda-toolbar {
+  background: var(--in-content-box-background) !important;
+  color: var(--in-content-page-color) !important;
+}
+
+.today-subpane {
+    border-bottom-color: #000 !important;
+}
+
+#todaypane-new-event-button .toolbarbutton-icon,
+.miniday-nav-buttons {
+  filter: invert(55%)
+}
+
+
+#agenda-listbox {
+ border-top-color: #000 !important;
+  background: #2c2d2F !important;
+  color: var(--in-content-page-color) !important;
+}
+
+.agenda-checkbox[selected="true"] {
+  background: #204E8A !important;
+  color: #FFF !important;
+}
