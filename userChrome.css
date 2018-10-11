@@ -227,7 +227,8 @@ tab[calview][selected=true] {
     border-top: 1px solid #000!important
   }
 }
-@-moz-document url-prefix(chrome://messenger/content/) {
+@-moz-document url-prefix(chrome://messenger/content/addressbook),
+url-prefix(chrome://messenger/content/activity) {
   #abcardWindow {
     -moz-appearance: none!important;
     background: #1f2022!important;

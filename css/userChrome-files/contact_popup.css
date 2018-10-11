@@ -1,4 +1,5 @@
-@-moz-document url-prefix(chrome://messenger/content/) {
+@-moz-document url-prefix(chrome://messenger/content/addressbook),
+url-prefix(chrome://messenger/content/activity) {
   #abcardWindow {
     -moz-appearance: none!important;
     background: #1f2022!important;
