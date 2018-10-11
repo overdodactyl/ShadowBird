@@ -126,6 +126,14 @@ menupopup,
   .addon-view[active=false] {
     opacity: .4!important
   }
+  .detail-row,
+  .detail-row-complex {
+    text-shadow: none!important;
+    color: var(--in-content-page-color)!important
+  }
+  .detail-view-container {
+    color: var(--in-content-page-color)!important
+  }
 }
 @-moz-document url-prefix(about:support) {
   /*! table sub categories */
