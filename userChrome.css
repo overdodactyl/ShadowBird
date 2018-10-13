@@ -1216,17 +1216,19 @@ screen and (-moz-os-version:windows-win10) {
     transition-duration: .25s!important
   }
   .flagColumnHeader {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAAB3RJTUUH4goLES0u6/ER7gAAAAlwSFlzAAAK8AAACvABQqw0mAAAANVJREFUeNrlUl0NhDAMbi/3vqEAUDAcgAMkAIoICmAOsIADUAAoAAe922ALy4UQ3kiuSbem/frzNUUigjvyuoX+14S3ejzPAyEEIKLxE+dc/dqxLAvM8wzjOLodfN+HaZogz3Otfd8DY+xyJMqyDNI01fYZBzJa17UNlmXpxDbk9zSapqEr2TG2AxZFcboZKaVdwJEDVlX1Ax6GwYK1odp0XWcJx3HsJKitmYQgCDYOURRpXdfVznvklSQJKD1y0NXbtoUwDE1FVPY+Pzkj3ZEHXusDEz68y4clZZz+dwAAAABJRU5ErkJggg==)!important
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAB3RJTUUH4goNEDYkhrsGgQAAAAlwSFlzAAAK8AAACvABQqw0mAAAANlJREFUeNq1UsENgzAMdKr+gW8+wASICRATZATIRIgJIBuwAYwAEwAffxkB6giiRi2tqFRLTmL7orucwtZ1hStxu4T+5cKdFs/zIIoiYIwdfXRdl3ZOy7IsMM8zjONoM/i+D9M0QZ7nOvu+B8dxvkrCLMtACKHPZ2/AI6uqMsOiKKyZbpKtdV3jY/+YO8YwcCnlqTNKKWPA8xt4WZYv4GEYDNjYGgSBduVdkEtJkpiaka44jnXRdR0SYJcA5BZFmqaaoW1bSxI2TQNhGB4SOJ33y2gxXIn/f74NiQFtCqcApPgAAAAASUVORK5CYII=)!important
   }
   .junkStatusHeader {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAAB3RJTUUH4goLESomqmsPGwAAAAlwSFlzAAAK8AAACvABQqw0mAAAANFJREFUeNrtU20RgzAMDbsJQAISsICDOqBSkICE1kEl4AAcFBQUB1lfBj0Y4zZ+b++u1zR5j3y0ZMxMV3C7xP5VwX01qqoirbXYzjkehgFmluc5jeNIIYTTDNw0TSJ/KonrukaGlA2+tyWt5C3atpVdKQVR9mTFp4FljOEVkcgopyxLir3wEhNeEnRdlwSxQQg4CuTsvT8K+AV934twg70Aqc+wxISXphRLOr2s5U5o1zRqnuf58HX4EDtkwNiKoiBrLU3TJAs2fGmkMP5/3Bd4AGg+8duvz7FTAAAAAElFTkSuQmCC)!important
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAB3RJTUUH4goNEDkcKSGi0AAAAAlwSFlzAAAK8AAACvABQqw0mAAAANZJREFUeNq1UsENgzAMNFUHyJsXI2QFNmCDMAIjMAIrsEFGYASYAPLxFzaguaixEqmoolItWbk45/gcpzjPk+7Y4xb7l4RnBHVdU9u2AVtreZ5nwFIpRdu20b7vlxW473shf5PExhhUkGqIfZQUyakNwxDWpmmQVGYVkhsJUkDuuk6wGOYAn6aJ/RrcN8ieyFrrsF/XlSOvSAaXacUrVVVFSeO5pGVZMv3+diGnZ5LgJV0O6z2TvAdoPo5D+oiOGM4iL51DCc3jOJJzLjgwYlE/rPj7b30B5XeMpCnsESQAAAAASUVORK5CYII=)!important
   }
   .readColumnHeader {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAAB3RJTUUH4goLEhEARpLbhwAAAAlwSFlzAAAK8AAACvABQqw0mAAAAORJREFUeNrtkqGyRWAUhZfjBI3AjCIogupFKMY7CGiaq5jxCqpMkryAKoqSoRhjCNK+/G9w2r0zZ4cdvllrzdozmyMifDKvj9Rfw98xOI6DNE1pmiY6z5OSJKF93zGOI/I8p+M4aFkW8n2fdF0HZ9s2ZVmGtm0hSRI8z8N1XVjXFTzPo65rxl3XhWma4G/Bz52MeZ6xbRtkWUbTNOi6DqIoYhgGxhVFYZpX3/ewLIv1e5IMw0BRFHi4pmkQBIFxVVUZe986rqoqCsMQd18EQfB4uWeVZUlRFOG5KY5jxrnve/9Pwy9/r2mluCKVfwAAAABJRU5ErkJggg==)!important
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAB3RJTUUH4goNEDsJdsokuQAAAAlwSFlzAAAK8AAACvABQqw0mAAAAOFJREFUeNrlkjEORGAUhMfaQkdBIpsoNAqti9CIOyiQbXSikbiCVk2lcgGtUqn6QyMiFCrr/2+w7e4Ur/gyM3kvedx1XfhGj6/cvxJwHAdpmhKq4zhIkiRk2zaM44g8z8m+72SeZ+L7PtF1HZxt2yTLMrRtC0mS4HkezvPEsizgeR51XTPuui5M0wR/G953M6ZpwrqukGUZTdOg6zqIoohhGBhXFIV5Hn3fw7Isth9tMgwDRVGAck3TIAgC46qqMva8fa+qqkgYhrj3RRAENPuioyxLEkUR6E1xHDPO/eNrfACk9WjAePQZ1wAAAABJRU5ErkJggg==)!important
   }
-  .threadColumnHeader,
+  .threadColumnHeader {
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAB3RJTUUH4goNEQAtd7lFZwAAAAlwSFlzAAAK8AAACvABQqw0mAAAADVJREFUeNpj/P//PwMpgIkk1dTQ8IwuTnqGzyZ0DVJQTFsn4XUaCx4NWJ1GeycxDv60RBAAAPdZDLOv+UWsAAAAAElFTkSuQmCC)!important
+  }
   .tree-columnpicker-icon {
-    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAYCAYAAADOMhxqAAAAB3RJTUUH4goLES8e/x5DwAAAAAlwSFlzAAAK8AAACvABQqw0mAAAADpJREFUeNpj/P//PwMpgIkk1aMaIIBgGFPFSf/x2YSugRGKaeskvE5jwaMBq9MGzkk4Q2oIJL6hqAEAfXAKLqWknd8AAAAASUVORK5CYII=)!important
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAAB3RJTUUH4goNEQIhTDlrzgAAAAlwSFlzAAAK8AAACvABQqw0mAAAAHZJREFUeNpj/P//PwMpgIkk1YNTAwuUfkaEWilkDXABJAPQ+QzoGtBtwWoryTaQ5GlDQ0PsGhQVFaU+fvyI4mEYnwWHYThDjQlNEQxLOTg4MMBMBdEgPkgcpkEKDYPFEhISwIyCggJ4oBDytBTQPyghyEhq8gYAPOYiVHaCy0oAAAAASUVORK5CYII=)!important
   }
   #AccountCentralTitle,
   .acctCentralNewAcctText,
@@ -1276,6 +1278,7 @@ treechildren::-moz-tree-image(flaggedCol,flagged) {
   .toolbarbutton-1:not([disabled=true]):hover > .toolbarbutton-menubutton-dropmarker {
     padding-left: 2px!important
   }
+  #clearListButton,
   .facet-more,
   .show-more,
   notification > button {
@@ -1299,5 +1302,12 @@ treechildren::-moz-tree-image(flaggedCol,flagged) {
       color: #4a7dc2!important;
       padding: 2px!important
     }
+  }
+  #threadpane-splitter[orient=vertical] {
+    background: 0 0!important;
+    border-color: #0c0c0c!important
+  }
+  scrollbar {
+    filter: invert(90%)!important
   }
 }
