@@ -128,9 +128,10 @@ treechildren::-moz-tree-image(flaggedCol,flagged) {
   .toolbarbutton-1:not([disabled=true]):hover > .toolbarbutton-menubutton-dropmarker {
     padding-left: 2px!important
   }
+  #clearListButton,
   .facet-more,
   .show-more,
-  notification > button, #clearListButton {
+  notification > button {
     background: #6d717d!important;
     color: #373737!important;
     text-shadow: none!important;
