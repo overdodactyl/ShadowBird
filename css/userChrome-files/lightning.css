@@ -1,0 +1,98 @@
+@-moz-document url-prefix(chrome://lightning/content/) {
+  #event-grid {
+    background: #1f2022!important;
+    color: #fff!important
+  }
+  textbox {
+    background: var(--in-content-box-background)!important;
+    -moz-appearance: none!important;
+    min-height: 20px!important;
+    color: var(--in-content-text-color)!important;
+    padding: 5px 2px!important
+  }
+  textbox[type=number] {
+    background: 0 0!important
+  }
+  .numberbox-input-box.textbox-input-box {
+    background: var(--in-content-box-background)!important;
+    -moz-appearance: none!important;
+    min-height: 20px!important;
+    color: var(--in-content-text-color)!important
+  }
+  ::-moz-selection {
+    color: #fff!important;
+    background: var(--in-content-table-header-background)!important
+  }
+  separator.groove:not([orient=vertical]) {
+    border-color: #363637!important
+  }
+  #item-attendees-box,
+  listboxbody {
+    -moz-appearance: none!important;
+    background: #373737!important;
+    border-color: #363637!important
+  }
+  .categories-listbox,
+  panel {
+    -moz-appearance: none!important;
+    background: #373737!important;
+    color: #fff!important
+  }
+  tab {
+    background: var(--in-content-box-background)!important;
+    -moz-appearance: none!important
+  }
+  tab[selected] {
+    background: var(--in-content-table-header-background)!important
+  }
+  tab:first-of-type {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+  }
+  tab:last-of-type {
+    border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important
+  }
+  .time-picker-five-minute-class[selected=true],
+  .time-picker-hour-box-class[selected=true],
+  .time-picker-more-control-label {
+    background-color: var(--in-content-table-header-background)!important;
+    color: HighlightText
+  }
+  .time-picker-hour-box-class,
+  .timepicker-amLabelBox-class,
+  .timepicker-pmLabelBox-class {
+    background-color: #2c2d2f!important;
+    border-color: #363637!important;
+    color: #fff!important
+  }
+  .time-picker-five-minute-class:hover,
+  .time-picker-hour-box-class:hover,
+  .time-picker-one-minute-class:hover,
+  .time-picker-one-minute-class[selected=true] > label:hover,
+  .timepicker-amLabelBox-class:hover,
+  .timepicker-pmLabelBox-class:hover {
+    background: var(--in-content-table-header-background)!important;
+    color: #fff!important
+  }
+  .time-picker-more-control-label {
+    border: none!important
+  }
+  .time-picker-minutes-bottom,
+  vbox[anonid=time-picker-grids] {
+    background-color: #2c2d2f!important
+  }
+  .time-picker-minutes-bottom,
+  grid[anonid=time-picker-hour-grid][format12hours=true] .timepicker-topRow-hour-class {
+    border-color: #363637!important
+  }
+  grid {
+    border-color: #363637!important;
+    background-color: #2c2d2f!important;
+    color: #fff!important
+  }
+  .timepicker-amLabelBox-class,
+  .timepicker-pmLabelBox-class {
+    border-color: #363637!important
+  }
+}
