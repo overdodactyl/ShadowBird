@@ -1310,4 +1310,9 @@ treechildren::-moz-tree-image(flaggedCol,flagged) {
   scrollbar {
     filter: invert(90%)!important
   }
+  @media screen and (-moz-os-version:windows-win7) {
+    treechildren {
+      --treechildren-outline: none!important
+    }
+  }
 }
