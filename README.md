@@ -19,7 +19,7 @@ This project is early in development and users are encouraged to open issues or 
 
 	- Help > Troubleshooting Information > Application Basics section > Profile Folder > Show in Finder
 
-3. (Optional) To change the background and text area of the message composition pages, you can dd the following lines to your `user.js` file within the profile directory (this will not alter the appearance of sent messages):
+3. (Optional) To change the background and text area of the message composition pages, you can add the following lines to your `user.js` file within the profile directory (this will not alter the appearance of sent messages):
 
 ```js
 user_pref("browser.display.foreground_color", "#b1b1b3");
